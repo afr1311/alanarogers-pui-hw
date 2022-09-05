@@ -6,3 +6,5 @@ Find the materials for your homework here:
 * The product photos: download them and use in your webpage design
 
 Your page should be self-contained! Download the assets and push to your repository. Do not link to the assets in this repository.
+
+http://127.0.0.1:5500/solution-hw1/index.html
