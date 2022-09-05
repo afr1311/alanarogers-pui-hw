@@ -7,4 +7,4 @@ Find the materials for your homework here:
 
 Your page should be self-contained! Download the assets and push to your repository. Do not link to the assets in this repository.
 
-https://github.com/afr1311/alanarogers-pui-hw/tree/main/solution-hw1
+Repository link: https://github.com/afr1311/alanarogers-pui-hw/tree/main/solution-hw1
