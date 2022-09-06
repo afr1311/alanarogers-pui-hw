@@ -29,6 +29,10 @@ header img {
     margin: 10px;
 }
 
+.pages h2 {
+    font-weight: 500;
+}
+
 .pages a {
     text-decoration: none;
     color: black;
