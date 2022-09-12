@@ -9,26 +9,38 @@
   
   <body>
 
-    <header>
-      <a href="../solution-hw2/home.html">
-        <img src="../solution-hw2/assets/logo/logo-01.svg" alt="bun bun logo">
-      </a>
-    </header>
-
-    <hr style="height: 3px; background: black; border: black;">
-
-
 <!-- -->
 
+    <nav class="nav-container">
 
-    <nav class="pages">
-      <h1>
-        <span><a href="../solution-hw2/home.html">Products</a></span>
-      </h1>
-      <h2>
-        <a href="../solution-hw2/shopping-cart.html">Cart</a>
-      </h2>
-      <p>Original cinammon roll</p>
+      <div class="logo-image">
+        <a href="../solution-hw2/home.html">
+          <img src="../solution-hw2/assets/logo/logo-01.svg" alt="bun bun logo">
+        </a>
+      </div>
+
+
+      <div class="nav-items">
+
+          <div class="links">
+            <h1>
+              <a href="../solution-hw2/home.html">Products</a>
+            </h1>
+            <h2>
+              <a href="../solution-hw2/shopping-cart.html">Cart</a>
+            </h2>
+          </div>
+
+          <div class="line">
+            <hr style="height: 3px; background: black; border: black;">
+          </div>
+
+          <div class="title">
+            <header>Original cinnamon roll</header>
+          </div>
+
+        </div>
+
     </nav>
 
 
@@ -36,43 +48,45 @@
 
 
     <div class="products">
-      <div class="buns">
+      <div class="bun-image">
         <img src="../solution-hw2/assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
-        <h3>Customize our delicious, hand-made cinnamon roll to your liking!</h3>
       </div>
-    </div>
 
-    <div class="glazing">
-      <h4>
-        <label for="glazing">Glazing:</label>
-      </h4>
-      <select name="glazing">
-        <option value="keep-original">Keep original</option>
-        <option value="sugar-milk">Sugar milk</option>
-        <option value="vanilla-milk">Vanilla milk</option>
-        <option value="double-chocolate">Double chocolate</option>
-      </select>
-    </div>
+      <div class="bun-desc">
+        <h3>Customize our delicious, hand-made cinnamon roll to your liking!</h3>
 
-    <div class="pack-size">
-      <h4>
-        <label for="pack-size">Pack size:</label>
-      </h4>
-      <select name="glazing">
-        <option value="one">1</option>
-        <option value="three">3</option>
-        <option value="six">6</option>
-        <option value="twelve">12</option>
-      </select>
-    </div>
+
+        <div class="glazing">
+          <h4>
+            <label for="glazing">Glazing:</label>
+          </h4>
+          <select name="glazing" style="width: 230px; height: 30px;">
+            <option value="keep-original">Keep original</option>
+            <option value="sugar-milk">Sugar milk</option>
+            <option value="vanilla-milk">Vanilla milk</option>
+            <option value="double-chocolate">Double chocolate</option>
+          </select>
+        </div>
     
+        <div class="pack-size">
+          <h4>
+            <label for="pack-size">Pack size:</label>
+          </h4>
+          <select name="glazing" style="width: 230px; height: 30px;"">
+            <option value="one">1</option>
+            <option value="three">3</option>
+            <option value="six">6</option>
+            <option value="twelve">12</option>
+          </select>
 
-<!-- -->
+          <div class="price">
+            <span>$2.49</span>
+            <button type="button">Add to cart</button>
+          </div>
 
+        </div>
 
-    <div class="price">
-      <span>$2.49</span>
-      <button type="button">Add to cart</button>
+      </div>
     </div>
 
   </body>

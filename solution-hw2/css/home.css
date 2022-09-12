@@ -5,58 +5,74 @@ body {
 }
 
 
-
-/* HEADER LOGO */
-
-header img {
-    width: 300px;
-    margin: 30px;
-}
-
-
-
 /* NAV */
 
-.pages {
+.nav-container {
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    margin-bottom: 100px;
 }
 
-.pages span {
+.logo-image {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-image img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.nav-items {
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links h1 {
     background-color: yellow;
+    height: 28px;
 }
 
-.pages h1 h2 {
-    margin: 10px;
-}
-
-.pages h2 {
+.links h2 {
     font-weight: 500;
+    margin-left: 70px;
 }
 
-.pages a {
+.links a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-size: 24px;
 }
 
-.pages p {
-    font-size: 32px;
-    margin-top: 80px;
-    text-align: center;
-    margin-bottom: 50px;
-}
 
-.pages a:hover {
+.links a:hover {
     background-color: yellow;
 }
 
+.title header {
+    font-size: 32px;
+    margin-top: 60px;
+    text-align: left;
+}
 
 
 /* PRODUCTS */
 
 .products {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .buns {
