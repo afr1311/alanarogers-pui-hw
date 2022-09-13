@@ -4,8 +4,6 @@ body {
     margin-bottom: 200px;
 }
 
-
-
 /* NAV */
 
 .nav-container {
@@ -64,20 +62,26 @@ body {
     text-align: left;
 }
 
-
-
 /* PRODUCTS */
 
 .products {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .buns {
-    width: 300px;
-    padding-top: 7px;
-    padding-bottom: 3px;
-    margin: auto;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 370px;
+    margin-right: 50px;
+}
+
+.buns-text {
+    display: flex;
+}
+
+.buns-text h3 {
+    margin-left: 30px;
 }
 
 .buns a {
@@ -85,6 +89,7 @@ body {
     font-size: 12px;
 }
 
+/* remove button */
 .buns h4 {
     margin-top: 5px;
 }
@@ -94,38 +99,49 @@ body {
     border: solid 3px black;
 }
 
-.buns h3, p {
-    text-align: center;
-}
-
 .buns h3 {
     font-size: 20px;
     font-weight: 500;
     font-size: 18px;
+    margin-top: 40px;
 }
 
 .buns p {
     font-size: 20px;
 }
 
+.buns-price p {
+    margin-top: 60px;
+}
 
+.line2 {
+    margin-left: 370px;
+    margin-right: 50px;
+}
 
 /* TOTAL */
 
-.total {
-    margin: auto;
-    margin-top: 60px;
-    width: 300px;
-    text-align: center;
+.bottom {
+    display: flex;
+    margin-left: 560px;
+    margin-right: 50px;
+    justify-content: space-between;
 }
 
-.total p {
+.total, .bottom p {
     font-size: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
 }
 
 button {
     border: solid 2px black;
     background-color: yellow;
-    padding: 5px 20px;
+    padding: 10px 20px;
     font-weight: 700;
+    font-size: 16px;
 }
