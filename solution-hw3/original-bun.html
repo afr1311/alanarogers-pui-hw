@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../solution-hw3/css/original-bun.css">
     <title>Original cinammon roll</title>
-    <script src="../solution-hw3/price-computation.js"></script>
   </head>
 
   <body>
@@ -48,6 +47,11 @@
           <h4>
             <label for="glazing">Glazing:</label>
           </h4>
+
+          <!-- drop down menu -->
+          <select id="glazingOptions"
+                  onchange="glazingChange(this)">
+          </select>
           <!-- <select name="glazing" style="width: 230px; height: 30px;">
             <option value="keep-original">Keep original</option>
             <option value="sugar-milk">Sugar milk</option>
@@ -60,9 +64,10 @@
           <h4>
             <label for="pack-size">Pack size:</label>
           </h4>
-          <select id="glazingOptions"
-                  onchange="glazingChange(this)">
-                
+
+          <!-- drop down menu -->
+          <select id="packOptions"
+                  onchange="packChange(this)">
           </select>
 
           <!-- <select name="glazing" style="width: 230px; height: 30px;">
@@ -82,5 +87,6 @@
       </div>
     </div>
 
+    <script src="../solution-hw3/price-computation.js"></script>
   </body>
 </html>
