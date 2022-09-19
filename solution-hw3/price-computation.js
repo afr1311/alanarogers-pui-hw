@@ -36,7 +36,6 @@ for (let i = 0; i < glazeList.length; i++)
     select.append(options);
 }
 
-
 // links to pack size dropdown in HTML
 var select = document.getElementById('packoptions');
 
