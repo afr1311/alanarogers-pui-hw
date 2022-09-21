@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-bottom: 200px;
+}
+
+
+/* HEADER LOGO */
+
+header img {
+    width: 300px;
+    margin: 30px;
+}
+
+
+/* NAV */
+
+.pages {
+    text-align: center;
+}
+
+.pages span {
+    background-color: yellow;
+}
+
+.pages h1 h2 {
+    margin: 10px;
+}
+
+.pages h2 {
+    font-weight: 500;
+}
+
+.pages a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.pages p {
+    font-size: 32px;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pages a:hover {
+    background-color: yellow;
+}
+
+
+/* PRODUCTS-GALLERY */
+
+.products-gallery {
+    text-align: center;
+}
+
+.buns-gallery {
+    width: 320px;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.buns-gallery:hover {
+    background-color: yellow;
+}
+
+.buns-gallery a {
+    text-decoration: none;
+    color: black;
+}
+
+.buns-gallery img {
+    width: 300px;
+    border: solid 3px black;
+}
+
+.buns-gallery h3,
+.buns-gallery p {
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.buns-gallery h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+.buns-gallery a, .buns-gallery p {
+    margin-top: 5px;
+}
+
+
+/* PRODUCTS-DETAIL */
+
+.products-detail {
+    text-align: center;
+}
+
+.buns-detail {
+    width: 600px;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.buns-detail a {
+    text-decoration: none;
+    color: black;
+}
+
+.buns-detail img {
+    width: 600px;
+    border: solid 3px black;
+}
+
+.buns-detail h3 {
+    font-size: 18px;
+    font-weight: 500;
+    width: 300px;
+    text-align: left;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.buns-detail a,
+.buns-detail p {
+    margin-top: 5px;
+}
+
+.glazing-detail,
+.pack-size-detail {
+    margin: auto;
+    width: 300px;
+}
+
+.glazing-detail h4,
+.pack-size-detail h4 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.glazing-detail select,
+.pack-size-detail select {
+    width: 100%;
+}
+
+.price-detail button {
+    border: solid 2px black;
+    background-color: yellow;
+    padding: 5px 20px;
+    font-weight: 700;
+}
+
+
+/* PRODUCTS-CART */
+
+.products-cart {
+    text-align: center;
+}
+
+.buns-cart {
+    width: 300px;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.buns-cart a {
+    color: black;
+    font-size: 12px;
+}
+
+.buns-cart h4 {
+    margin-top: 5px;
+}
+
+.buns-cart img {
+    width: 150px;
+    border: solid 3px black;
+}
+
+.buns-cart h3,
+.buns-cart p {
+    text-align: center;
+}
+
+.buns-cart h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.buns-cart p {
+    font-size: 20px;
+}
+
+
+/* PRICE-DETAIL */
+
+.price-detail span {
+    padding-right: 20px;
+}
+
+.price-detail {
+    margin: auto;
+    margin-top: 70px;
+    width: 300px;
+    text-align: center;
+}
+
+
+/* TOTAL-CART */
+
+.total-cart {
+    margin: auto;
+    margin-top: 60px;
+    width: 300px;
+    text-align: center;
+}
+
+.total-cart p {
+    font-size: 20px;
+}
+
+.total-cart button {
+    border: solid 2px black;
+    background-color: yellow;
+    padding: 5px 20px;
+    font-weight: 700;
+}
