@@ -31,12 +31,13 @@ body {
     margin-bottom: 20px;
 }
 
-.links h1 {
+#highlight {
     background-color: yellow;
     height: 28px;
+    margin-left: 70px;
 }
 
-.links h2 {
+#no-highlight {
     font-weight: 500;
     margin-left: 70px;
 }
@@ -285,6 +286,14 @@ body {
         margin-bottom: 0;
     }
 
+    #highlight {
+        margin-left: auto;
+    }
+
+    #no-highlight {
+        margin-left: auto;
+    }
+
     .links h1 {
         margin-top: 0;
         margin-bottom: 0;
@@ -303,7 +312,7 @@ body {
     }
 
     .links h2 a:hover {
-        background-color: white;
+        background-color: none;
     }
 
     .title {
