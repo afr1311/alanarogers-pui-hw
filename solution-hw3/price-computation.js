@@ -15,7 +15,7 @@ var packList = [
 ];
 
 // links to glazing dropdown in HTML
-var select = document.getElementById('glazingoptions');
+var select = document.getElementById('glazing-options-detail');
 
 // creating dropdown menu by looping through glazelist
 for (let i = 0; i < glazeList.length; i++)
@@ -37,7 +37,7 @@ for (let i = 0; i < glazeList.length; i++)
 }
 
 // links to pack size dropdown in HTML
-var select = document.getElementById('packoptions');
+var select = document.getElementById('pack-options-detail');
 
 // creating dropdown menu by looping through packlist
 for (let i = 0; i < packList.length; i++)
@@ -65,12 +65,12 @@ function glazingChange(element) {
     const glazingPrice = parseFloat(element.value);
 
     // getting packOptions from HTML
-    var packMenu = document.getElementById('packoptions');
+    var packMenu = document.getElementById('pack-options-detail');
     var packPrice = parseFloat(packMenu.value);
 
     // updating price in HTML
     var newPrice = ((basePrice + glazingPrice) * packPrice).toFixed(2);
-    var totalPrice = document.getElementById('totalprice');
+    var totalPrice = document.getElementById('total-price-detail');
     totalPrice.innerHTML = '$' + newPrice;
 }
 
@@ -80,11 +80,11 @@ function packChange(element) {
     const packPrice = parseFloat(element.value);
 
     // getting glazingOptions from HTML
-    var glazingMenu = document.getElementById('glazingoptions');
+    var glazingMenu = document.getElementById('glazing-options-detail');
     var glazingPrice = parseFloat(glazingMenu.value);
 
     // updating price in HTML
     var newPrice = ((basePrice + glazingPrice) * packPrice).toFixed(2);
-    var totalPrice = document.getElementById('totalprice');
+    var totalPrice = document.getElementById('total-price-detail');
     totalPrice.innerHTML = '$' + newPrice;
 }
