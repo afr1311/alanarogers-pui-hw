@@ -118,7 +118,6 @@ body {
     margin-top: 5px;
 }
 
-
 /* PRODUCT-DETAIL */
 
 .products-detail {
@@ -173,8 +172,6 @@ body {
     margin-top: 70px;
     text-align: center;
 }
-
-
 
 /* PRODUCT-CART */
 
@@ -269,7 +266,7 @@ body {
         margin-bottom: 10px;
     }
 
-/* NAV */
+    /* NAV */
 
     .nav-container {
         margin: 20px;
@@ -317,7 +314,7 @@ body {
     }
 
     .links h2 a:hover {
-        background-color: none;
+        background-color: transparent;
     }
 
     .title {
@@ -423,9 +420,7 @@ body {
         padding-left: 0;
     }
 
-
 }
-
 
 @media only screen and (max-width: 300px) {
     .bun-image-detail {
