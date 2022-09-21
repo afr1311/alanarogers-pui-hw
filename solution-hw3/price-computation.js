@@ -9,7 +9,7 @@ var glazeList = [
 
 var packList = [
     { size: '1', priceMultiply: 1 },
-    { size: '3', priceMmultiply: 3 },
+    { size: '3', priceMultiply: 3 },
     { size: '6', priceMultiply: 5 },
     { size: '12', priceMultiply: 10 }
 ];

@@ -152,6 +152,11 @@ body {
     font-weight: 500;
 }
 
+#glazing-options-detail,
+#pack-options-detail {
+    width: 100%;
+}
+
 .price-detail button {
     border: solid 2px black;
     background-color: yellow;
