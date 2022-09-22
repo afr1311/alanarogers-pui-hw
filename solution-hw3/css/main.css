@@ -225,9 +225,12 @@ body {
     margin-top: 60px;
 }
 
-.line2-cart {
+.line-cart {
     margin-left: 370px;
     margin-right: 50px;
+    height: 3px;
+    background: black;
+    border: black;
 }
 
 /* TOTAL */
