@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../solution-hw4/css/main.css">
-    <title>Original cinnamon roll</title>
+    <title id="title">Original cinnamon roll</title>
+    <script defer src="../solution-hw4/js/rollsData.js"></script>
+    <script defer src="../solution-hw4/js/details.js"></script>
     <script src="../solution-hw4/js/price-computation.js" defer></script>
-    <script src="../solution-hw4/js/rollsData.js" defer></script>
   </head>
 
   <body>
@@ -30,7 +31,7 @@
       </div>
 
       <div class="title">
-          <header>Original cinnamon roll</header>
+          <header id="heading">Original cinnamon roll</header>
       </div>
 
   </nav>
@@ -39,7 +40,7 @@
 
     <div class="products-detail">
       <div class="bun-image-detail">
-        <img src="../solution-hw4/assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+        <img id="image" src="../solution-hw4/assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
       </div>
 
       <div class="bun-desc-detail">
@@ -68,7 +69,7 @@
 
           <div class="price-detail">
             <span id="total-price-detail">$2.49</span>
-            <button type="button">Add to cart</button>
+            <button type="button" onclick="addToCart()">Add to cart</button>
           </div>
 
         </div>

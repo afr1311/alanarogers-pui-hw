@@ -1,4 +1,4 @@
-const basePrice = 2.49;
+const basePrice = rollPrice;
 
 var glazeList = [
     { glaze: 'Keep original', price: 0 },
