@@ -1,13 +1,13 @@
 const basePrice = rollPrice;
 
-var glazeList = [
+let glazeList = [
     { glaze: 'Keep original', price: 0 },
     { glaze: 'Sugar Milk', price: 0 },
     { glaze: 'Vanilla Milk', price: 0.5 },
     { glaze: 'Double chocolate', price: 1.5 }
 ];
 
-var packList = [
+let packList = [
     { size: '1', priceMultiply: 1 },
     { size: '3', priceMultiply: 3 },
     { size: '6', priceMultiply: 5 },
@@ -15,7 +15,9 @@ var packList = [
 ];
 
 // links to glazing dropdown in HTML
-var select = document.getElementById('glazing-options-detail');
+// make let and change name of select
+// changed from select
+let selectGlazeDropdown = document.getElementById('glazing-options-detail');
 
 // creating dropdown menu by looping through glazelist
 for (let i = 0; i < glazeList.length; i++)
@@ -33,11 +35,13 @@ for (let i = 0; i < glazeList.length; i++)
     options.value = glazeSelect.price;
 
     // putting info that was just collected into HTML dropdown menu
-    select.append(options);
+    // changed from select
+    selectGlazeDropdown.append(options);
 }
 
 // links to pack size dropdown in HTML
-var select = document.getElementById('pack-options-detail');
+// changed from select
+let selectPackDropdown = document.getElementById('pack-options-detail');
 
 // creating dropdown menu by looping through packlist
 for (let i = 0; i < packList.length; i++)
@@ -55,7 +59,8 @@ for (let i = 0; i < packList.length; i++)
     options.value = packSelect.priceMultiply;
 
     // putting info that was just collected into HTML dropdown menu
-    select.append(options);
+    // changed from select
+    selectPackDropdown.append(options);
 }
 
 

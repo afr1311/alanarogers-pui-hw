@@ -161,6 +161,7 @@ body {
     background-color: yellow;
     padding: 5px 20px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .price-detail span {
