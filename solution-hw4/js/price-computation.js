@@ -1,13 +1,13 @@
 const basePrice = rollPrice;
 
-var glazeList = [
+let glazeList = [
     { glaze: 'Keep original', price: 0 },
     { glaze: 'Sugar Milk', price: 0 },
     { glaze: 'Vanilla Milk', price: 0.5 },
     { glaze: 'Double chocolate', price: 1.5 }
 ];
 
-var packList = [
+let packList = [
     { size: '1', priceMultiply: 1 },
     { size: '3', priceMultiply: 3 },
     { size: '6', priceMultiply: 5 },
@@ -23,7 +23,7 @@ for (let i = 0; i < glazeList.length; i++)
     let glazeSelect = glazeList[i];
 
     // creating space to put in each of options
-    var options = document.createElement('option');
+    let options = document.createElement('option');
 
     // put information into that spot
     // taking glaze name from glazelist and putting it in options
@@ -45,7 +45,7 @@ for (let i = 0; i < packList.length; i++)
     let packSelect = packList[i];
 
     // creating space to put in each of options
-    var options = document.createElement('option');
+    let options = document.createElement('option');
 
     // put information into that spot
     // taking pack size from packlist and putting it in options
@@ -65,12 +65,12 @@ function glazingChange(element) {
     const glazingPrice = parseFloat(element.value);
 
     // getting packOptions from HTML
-    var packMenu = document.getElementById('pack-options-detail');
-    var packPrice = parseFloat(packMenu.value);
+    let packMenu = document.getElementById('pack-options-detail');
+    let packPrice = parseFloat(packMenu.value);
 
     // updating price in HTML
-    var newPrice = ((basePrice + glazingPrice) * packPrice).toFixed(2);
-    var totalPrice = document.getElementById('total-price-detail');
+    let newPrice = ((basePrice + glazingPrice) * packPrice).toFixed(2);
+    let totalPrice = document.getElementById('total-price-detail');
     totalPrice.innerHTML = '$' + newPrice;
 }
 
@@ -80,11 +80,11 @@ function packChange(element) {
     const packPrice = parseFloat(element.value);
 
     // getting glazingOptions from HTML
-    var glazingMenu = document.getElementById('glazing-options-detail');
-    var glazingPrice = parseFloat(glazingMenu.value);
+    let glazingMenu = document.getElementById('glazing-options-detail');
+    let glazingPrice = parseFloat(glazingMenu.value);
 
     // updating price in HTML
-    var newPrice = ((basePrice + glazingPrice) * packPrice).toFixed(2);
-    var totalPrice = document.getElementById('total-price-detail');
+    let newPrice = ((basePrice + glazingPrice) * packPrice).toFixed(2);
+    let totalPrice = document.getElementById('total-price-detail');
     totalPrice.innerHTML = '$' + newPrice;
 }
