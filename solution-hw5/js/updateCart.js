@@ -77,7 +77,7 @@ for (const roll of rollSet) {
     createElement(roll);
 }
 
-// grabs template in HTML
+// grabs <template> in HTML
 function createElement(roll) {
     // grab reference to roll template
     const template = document.querySelector('#roll-template');
