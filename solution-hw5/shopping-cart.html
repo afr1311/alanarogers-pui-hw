@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../solution-hw5/css/main.css">
     <title>Shopping Cart</title>
+    <script defer src="../solution-hw5/js/rollsData.js"></script>
     <script defer src="../solution-hw5/js/updateCart.js"></script>
   </head>
 
@@ -40,77 +41,40 @@
 
 <!-- first bun -->
 
-      <div id="roll-list"></div>
+      <div id="roll-list">
+        <template id="roll-template">
+          <div class="roll-cart">
+            <div class="roll-text-cart">
 
-      <!-- <template id="roll-template"> -->
-        <div class="roll-cart">
-          <div class="roll-text-cart">
-
-            <div class="roll-image-remove">
-              <div class="roll-image">
-                <img src="../solution-hw5/assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+              <div class="roll-image-remove">
+                <div class="roll-image">
+                  <img id="image" src="../solution-hw5/assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+                </div>
+                <div class="remove">
+                  <h4 id="delete">Remove</h4>
+                </div>
               </div>
-              <div class="delete">
-                <a href="#"><h4>Remove</h4></a>
+
+              <div class="roll-description">
+                <div class="roll-type">
+                  <h3 id="type">Original cinnamon roll</h3>
+                </div>
+                <div class="roll-glazing">
+                  <h3 id="glazing">Glazing: Keep original</h3>
+                </div>
+                <div class="roll-pack-size">
+                  <h3 id="pack-size">Pack size: 1</h3>
+                </div>
+
               </div>
             </div>
 
-            <div class="roll-description">
-              <div class="roll-type">
-                <h3>Original cinnamon roll</h3>
-              </div>
-              <div class="roll-glazing">
-                <h3>Glazing: Keep original</h3>
-              </div>
-              <div class="roll-pack-size">
-                <h3>Pack size: 1</h3>
-              </div>
-
+            <div class="roll-price-cart">
+              <h3 id="price">$2.49</h3>
             </div>
+
           </div>
-
-
-
-          <div class="roll-price-cart">
-            <h3>$2.49</h3>
-          </div>
-
-        </div>
-      <!-- </template> -->
-
-<!-- second bun -->
-
-    </div>
-
-    <div class="roll-cart">
-      <div class="roll-text-cart">
-
-        <div class="roll-image-remove">
-          <div class="roll-image">
-            <img src="../solution-hw5/assets/products/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon roll">
-          </div>
-          <div class="delete">
-            <a href="#"><h4>Remove</h4></a>
-          </div>
-        </div>
-
-        <div class="roll-description">
-          <div class="roll-type">
-            <h3>Double-chocolate cinnamon roll</h3>
-          </div>
-          <div class="roll-glazing">
-            <h3>Glazing: Sugar milk</h3>
-          </div>
-          <div class="roll-pack-size">
-            <h3>Pack size: 6</h3>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="roll-price-cart">
-        <h3>$27.45</h3>
+        </template>
       </div>
 
     </div>

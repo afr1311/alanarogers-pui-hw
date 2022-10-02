@@ -206,8 +206,11 @@ body {
 }
 
 /* remove button */
-.delete h4 {
+.remove h4 {
     margin-top: 5px;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .roll-image img {
@@ -227,7 +230,6 @@ body {
 }
 
 .roll-price-cart h3 {
-    font-size: 20px;
     margin-top: 60px;
 }
 

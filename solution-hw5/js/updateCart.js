@@ -10,10 +10,8 @@ class Roll {
     }
 }
 
-// create set to store roll objects
+// set to store roll objects
 const rollSet = new Set();
-
-// make 4 new Roll objects and add to cart
 
 // function that allows us to make new rolls and adds them to set
 function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
@@ -24,51 +22,7 @@ function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
 }
 
 
-// creating element using HTML templates
-function createElement(roll) {
-    const template = document.querySelector('#roll-template');
-    // getting content from inside the template and copy it
-    const clone = template.content.cloneNode(true);
-    // store reference to the newly copid elemet
-    roll.element = clone.querySelector('.roll');
-
-    const btnDelete = roll.element.querySelector('.delete');
-    console.log(btnDelete);
-    btnDelete.addEventListener('click', () => {
-        deleteRoll(roll);
-    })
-
-    // grab a reference to .roll-list dic that will contain all of our rolls
-    const rollListElement = document.querySelector('#roll-list');
-    // add newly created elements -- can use append or prepend
-    rollListElement.prepend(roll.element);
-
-    // a call to the function updateElement
-    updateElement(roll);
-}
-
-
-function updateElement(roll) {
-    const rollImageElement = roll.element.querySelector('.roll-image');
-    const rollTypeElement = roll.element.querySelector('.roll-type');
-    const rollGlazingElement = roll.element.querySelector('.roll-type');
-    const rollPackSizeElement = roll.element.querySelector('.roll-pack-size');
-    const rollBasePriceElement = roll.element.querySelector('.roll-price-cart');
-
-    // do I need to make rollImage constructor?
-    // rollImageElement.src = roll.rollImage;
-    rollTypeElement.innertext = roll.type;
-    rollGlazingElement.innertext = roll.glazing;
-    rollPackSizeElement.innertext = roll.size;
-    rollBasePriceElement.innertext = roll.basePrice;
-}
-
-function deleteRoll(roll) {
-    roll.element.remove();
-    rollSet.delete(roll);
-}
-
-
+// NEED TO DO PRICE CALCULATIONS IN JS
 // creating roll objects
 const originalRoll = addNewRoll(
     "Original",
@@ -77,7 +31,7 @@ const originalRoll = addNewRoll(
     2.49
 );
 
-const wallnutRoll = addNewRoll(
+const walnutRoll = addNewRoll(
     "Walnut",
     "Vanilla Milk",
     12,
@@ -98,8 +52,60 @@ const appleRoll = addNewRoll(
     10.47
 );
 
-// loop through set and create DOM element for each roll object
+// loop that iterates through the rollSet
 for (const roll of rollSet) {
     console.log(roll);
     createElement(roll);
 }
+
+// grabs template in HTML
+function createElement(roll) {
+    // grab reference to roll template
+    const template = document.querySelector('#roll-template');
+    // get content inside template and copy it
+    const clone = template.content.cloneNode(true);
+    // store a referene to newly copied element
+    roll.element = clone.querySelector('.roll-cart');
+
+    // adding event listener to delete rolls
+    const btnDelete = roll.element.querySelector('#delete');
+    btnDelete.addEventListener('click', () => {
+        deleteRoll(roll);
+    });
+
+    // grab reference to .roll-list in HTML
+    const rollListElement = document.querySelector('#roll-list');
+
+    // add newly created elements using append or prepend
+    rollListElement.prepend(roll.element);
+
+    updateElement(roll);
+}
+
+// updates template in HTML to show the rolls
+function updateElement(roll) {
+    // referring to rollsData.js
+    let rollImage = rolls[roll.type].imageFile;
+
+    const rollTypeElement = roll.element.querySelector('#type');
+        const rollGlazingElement = roll.element.querySelector('#glazing');
+        const rollPackSizeElement = roll.element.querySelector('#pack-size');
+        const rollBasePriceElement = roll.element.querySelector('#price');
+        const rollImageElement = roll.element.querySelector('#image');
+
+    rollTypeElement.innerText = roll.type + " Cinnamon Roll";
+    rollGlazingElement.innerText = "Glazing: " + roll.glazing;
+    rollPackSizeElement.innerText = "Pack size: " + roll.size;
+    rollBasePriceElement.innerText = "$" + roll.basePrice.toFixed(2);
+    rollImageElement.src = '../solution-hw5/assets/products/' + rollImage;
+}
+
+// function to delete rolls
+function deleteRoll(roll) {
+    roll.element.remove();
+    rollSet.delete(roll);
+}
+
+
+
+// NEED TO DO TOTAL PRICE CALCULATION

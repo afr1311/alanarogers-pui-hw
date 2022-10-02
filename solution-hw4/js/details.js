@@ -41,7 +41,7 @@ class Roll {
 }
 
 // function to add roll selections to cart (and console.log)
-function addToCart(){
+function addToCart() {
 
     // getting pack and glazing selections from dropdown menu
     // loading menus into javascript
