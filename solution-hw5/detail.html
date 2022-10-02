@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../solution-hw5/css/main.css">
+    <title id="title">Original cinnamon roll</title>
+    <script defer src="../solution-hw5/js/rollsData.js"></script>
+    <script defer src="../solution-hw5/js/details.js"></script>
+    <script src="../solution-hw5/js/price-computation.js" defer></script>
+  </head>
+
+  <body>
+
+<!-- -->
+
+    <div class="logo-image">
+      <a href="../solution-hw5/gallery.html">
+        <img src="../solution-hw5/assets/logo/logo-01.svg" alt="bun bun logo">
+      </a>
+    </div>
+
+    <nav class="nav-container">
+
+      <div class="links">
+
+        <h1 id="highlight">
+          <a href="../solution-hw5/gallery.html">Products</a>
+        </h1>
+
+        <h2 id="no-highlight">
+          <a href="../solution-hw5/shopping-cart.html">Cart</a>
+        </h2>
+
+      </div>
+
+      <div class="title">
+        <header id="heading">Original cinnamon roll</header>
+      </div>
+
+    </nav>
+
+<!-- -->
+
+    <div class="products-detail">
+      <div class="bun-image-detail">
+        <img id="image" src="../solution-hw5/assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+      </div>
+
+      <div class="bun-desc-detail">
+        <h3>Customize our delicious, hand-made cinnamon roll to your liking!</h3>
+
+        <div class="glazing-detail">
+          <h4>
+            <label for="glazing-detail">Glazing:</label>
+          </h4>
+
+          <!-- drop down menu -->
+          <select id="glazing-options-detail"
+                  onchange="glazingChange(this)">
+          </select>
+        </div>
+    
+        <div class="pack-size-detail">
+          <h4>
+            <label for="pack-size-detail">Pack size:</label>
+          </h4>
+
+          <!-- drop down menu -->
+          <select id="pack-options-detail"
+                  onchange="packChange(this)">
+          </select>
+
+          <div class="price-detail">
+            <span id="total-price-detail">$2.49</span>
+            <button type="button" onclick="addToCart()">Add to cart</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
