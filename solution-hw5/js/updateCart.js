@@ -23,6 +23,7 @@ function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
     return roll;
 }
 
+// creating roll objects
 const originalRoll = addNewRoll(
     "Original",
     "Sugar Milk",
@@ -50,3 +51,22 @@ const appleRoll = addNewRoll(
     3,
     10.47
 );
+
+
+// loop through set and create DOM element for each roll object
+for (const roll of rollSet) {
+    console.log(roll);
+    createElement(roll);
+}
+
+// creating element using HTML templates
+function createElement(roll) {
+    const template = document.querySelector('#roll-template');
+    // getting content from inside the template and copy it
+    const clone = template.content.cloneNode(true);
+    // store reference to the newly copid elemet
+    roll.element = clone.querySelector('.roll');
+
+    // grab a reference to .roll-list dic that will contain all of our rolls
+    const rollListElement = document.querySelector('#roll-list');
+}
