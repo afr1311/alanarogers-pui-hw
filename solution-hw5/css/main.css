@@ -181,48 +181,53 @@ body {
     flex-direction: column;
 }
 
-.buns-cart {
+.roll-cart {
     display: flex;
     justify-content: space-between;
     margin-left: 370px;
     margin-right: 50px;
 }
 
-.buns-text-cart {
+.roll-text-cart {
     display: flex;
 }
 
-.buns-text-cart h3 {
-    margin-left: 30px;
+.roll-description {
+    margin-top: 40px;
 }
 
-.buns-cart a {
+.roll-text-cart h3 {
+    margin: 0 0 0 30px;
+}
+
+.roll-cart a {
     color: black;
     font-size: 12px;
 }
 
 /* remove button */
-.buns-cart h4 {
+.delete h4 {
     margin-top: 5px;
 }
 
-.buns-cart img {
+.roll-image img {
     width: 150px;
     border: solid 3px black;
 }
 
-.buns-cart h3 {
+.roll-cart h3 {
     font-size: 20px;
     font-weight: 500;
     font-size: 18px;
-    margin-top: 40px;
+
 }
 
-.buns-cart p {
+.roll-cart p {
     font-size: 20px;
 }
 
-.buns-price-cart p {
+.roll-price-cart h3 {
+    font-size: 20px;
     margin-top: 60px;
 }
 
