@@ -63,7 +63,6 @@ for (let i = 0; i < packList.length; i++)
     selectPackDropdown.append(options);
 }
 
-
 function glazingChange(element) {
 
     // get value of selected glazing option
