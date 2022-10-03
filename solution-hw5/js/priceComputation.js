@@ -1,7 +1,7 @@
 const basePrice = rollPrice;
 
 let glazeList = [
-    { glaze: 'Keep original', price: 0 },
+    { glaze: 'Original', price: 0 },
     { glaze: 'Sugar Milk', price: 0 },
     { glaze: 'Vanilla Milk', price: 0.5 },
     { glaze: 'Double chocolate', price: 1.5 }
