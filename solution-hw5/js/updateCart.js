@@ -38,6 +38,7 @@ function addNewRoll(rollType, rollGlazing, packSize) {
     // ... assign price value to it
     let priceGlaze = glazeObject.price;
 
+    // https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
     let packObject = packList.find(o => o.size === packSize);
     let pricePackSize = packObject.priceMultiply;
 
