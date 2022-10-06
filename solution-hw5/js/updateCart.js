@@ -33,6 +33,7 @@ function addNewRoll(rollType, rollGlazing, packSize) {
     // rolls is from rollsData.js and gets corresponding basePrice
     let basePrice = rolls[rollType].basePrice;
     // going to glazeList, finding glaze and if glaze is equal to rollGlazing (which is attribute of roll object)...
+    // https://stackoverflow.com/questions/12462318/find-a-value-in-an-array-of-objects-in-javascript
     let glazeObject = glazeList.find(o => o.glaze === rollGlazing);
     // ... assign price value to it
     let priceGlaze = glazeObject.price;
