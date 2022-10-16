@@ -1,4 +1,4 @@
-# HW5 Materials
+# HW6 Materials
 
 Find the materials for your homework here:
 * The mockups for all webpages for closer inspection, if needed. Reminder: you don't have to be pixel-accurate; the overall proportions should match.
@@ -9,4 +9,4 @@ Your page should be self-contained! Download the assets and push to your reposit
 
 Deployed website: https://afr1311.github.io/alanarogers-pui-hw/
 
-Repository link: https://github.com/afr1311/alanarogers-pui-hw/tree/main/solution-hw5
+Repository link: https://github.com/afr1311/alanarogers-pui-hw/tree/main/solution-hw6
