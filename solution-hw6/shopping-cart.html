@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../solution-hw6/css/main.css">
+    <title>Shopping Cart</title>
+    <script defer src="../solution-hw6/js/rollsData.js"></script>
+    <script defer src="../solution-hw6/js/updateCart.js"></script>
+  </head>
+
+  <body>
+
+<!-- -->
+
+    <div class="logo-image">
+      <a href="../solution-hw6/gallery.html">
+        <img src="../solution-hw6/assets/logo/logo-01.svg" alt="bun bun logo">
+      </a>
+    </div>
+
+    <nav class="nav-container">
+
+      <div class="links">
+        <h1 id="no-highlight">
+          <a href="../solution-hw6/gallery.html">Products</a>
+        </h1>
+        <h2 id="highlight">
+          <a href="../solution-hw6/shopping-cart.html">Cart</a>
+        </h2>
+      </div>
+
+      <div class="title">
+        <header>Shopping Cart</header>
+      </div>
+
+    </nav>
+
+<!-- -->
+
+    <div class="products-cart">
+
+<!-- first bun -->
+
+      <div id="roll-list">
+        <template id="roll-template">
+          <div class="roll-cart">
+            <div class="roll-text-cart">
+
+              <div class="roll-image-remove">
+                <div class="roll-image">
+                  <img id="image" src="../solution-hw6/assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+                </div>
+                <div class="remove">
+                  <h4 id="delete">Remove</h4>
+                </div>
+              </div>
+
+              <div class="roll-description">
+                <div class="roll-type">
+                  <h3 id="type">Original cinnamon roll</h3>
+                </div>
+                <div class="roll-glazing">
+                  <h3 id="glazing">Glazing: Keep original</h3>
+                </div>
+                <div class="roll-pack-size">
+                  <h3 id="pack-size">Pack size: 1</h3>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="roll-price-cart">
+              <h3 id="price">$2.49</h3>
+            </div>
+
+          </div>
+        </template>
+      </div>
+
+    </div>
+
+<!-- division line -->
+
+    <hr class="line-cart">
+
+<!-- -->
+
+    <div class="bottom-cart">
+      <div class="total-cart">
+        <p>Total:</p>
+      </div>
+
+      <div class="price-cart">
+        <p id="total">$0.00</p>
+      </div>
+    </div>
+
+    <div class="button-cart">
+      <button type="button">Checkout</button>
+    </div>
+
+  </body>
+</html>
