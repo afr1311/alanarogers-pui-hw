@@ -2,22 +2,6 @@ let cartData = JSON.parse(localStorage.getItem('storedRolls'));
 // ... is spread - converts array to set
 let rollSet = new Set([...cartData]);
 
-console.log(localStorage.getItem('storedRolls'));
-
-// let glazeList = [
-//     { glaze: 'Original', price: 0 },
-//     { glaze: 'Sugar Milk', price: 0 },
-//     { glaze: 'Vanilla Milk', price: 0.5 },
-//     { glaze: 'Double chocolate', price: 1.5 }
-// ];
-
-// let packList = [
-//     { size: '1', priceMultiply: 1 },
-//     { size: '3', priceMultiply: 3 },
-//     { size: '6', priceMultiply: 5 },
-//     { size: '12', priceMultiply: 10 }
-// ];
-
 let glazeList = {
     "Original": 0,
     "Sugar Milk": 0,
@@ -129,32 +113,6 @@ function deleteRoll(roll) {
     // update total price when roll is deleted
     updateTotalPrice();
 }
-
-
-// creating roll objects
-// const originalRoll = addNewRoll(
-//     "Original",
-//     "Sugar Milk",
-//     "1"
-// );
-
-// const walnutRoll = addNewRoll(
-//     "Walnut",
-//     "Vanilla Milk",
-//     "12"
-// );
-
-// const raisinRoll = addNewRoll(
-//     "Raisin",
-//     "Sugar Milk",
-//     "3"
-// );
-
-// const appleRoll = addNewRoll(
-//     "Apple",
-//     "Original",
-//     "3"
-// );
 
 // loop that iterates through the rollSet to create each roll in HTML
 for (const roll of rollSet) {

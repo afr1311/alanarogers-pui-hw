@@ -3,7 +3,6 @@ let cart = [];
 // HW 6 save items in cart array to local storage
 let cartData = localStorage.getItem('storedRolls');
 if (cartData) cart = Array.from(JSON.parse(cartData));
-console.log(cart);
 
 // First, we get the query string from the URL. This is the list of parameters
 // that begins with a question mark. (These are known as "search parameters")
@@ -72,6 +71,4 @@ function saveToLocalStorage() {
     const rollArrayString = JSON.stringify(cart);
 
     localStorage.setItem('storedRolls', rollArrayString);
-    console.log(localStorage.getItem('storedRolls'));
-
 }
