@@ -2,8 +2,7 @@ let cart = [];
 
 // HW 6 save items in cart array to local storage
 let cartData = localStorage.getItem('storedRolls');
-let cartArr = Array.from(JSON.parse(cartData));
-if(cartArr.length) cart = cartArr;
+if (cartData) cart = Array.from(JSON.parse(cartData));
 console.log(cart);
 
 // First, we get the query string from the URL. This is the list of parameters
