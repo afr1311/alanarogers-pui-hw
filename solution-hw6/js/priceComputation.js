@@ -1,3 +1,5 @@
+console.log('hello');
+
 const basePrice = rollPrice;
 
 let glazeList = [
