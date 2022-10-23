@@ -16,7 +16,6 @@ let packList = {
     12:10
 }
 
-
 // creating template for new roll
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice, calculatedPrice) {
@@ -118,4 +117,3 @@ function deleteRoll(roll) {
 for (const roll of rollSet) {
     createElement(roll);
 }
-
