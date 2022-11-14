@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../fp/fp.css">
+        <title>FATE</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>
+                <a href="fp-home.html">F.A.T.E.</a>
+            </h1>
+        </header>
+
+        
+        <nav>
+            <h2>
+                <a href="fp-home.html">What is FATE?</a>
+            </h2>
+            
+            <h2>
+                <a href="fp-cases.html">Cases of algorithmic bias</a>
+            </h2>
+        </nav>
+
+        <!-- cases drop down menus -->
+        <div class="cases-menu">
+            <h3>
+                Sort by:
+            </h3>
+
+            <!-- drop down menu for year -->
+            <div class="cases-sort-year">
+                <h4>
+                    <label for="cases-sort-year">Date</label>
+                </h4>
+                
+                <select id="cases-year"
+                    onchange="yearChange(this)">
+                </select>
+            </div>
+
+            <!-- drop down menu for industry -->
+            <div class="cases-sort-industry">
+                <h4>
+                    <label for="cases-sort-industry">Industry</label>
+                </h4>
+                
+                <select id="cases-industry"
+                    onchange="industryChange(this)">
+                </select>
+            </div>
+
+            <!-- drop down menu for industry -->
+            <!-- make into binary option? -->
+            <div class="cases-sort-sector">
+                <h4>
+                    <label for="cases-sort-sector">Sector</label>
+                </h4>
+                
+                <select id="cases-sector"
+                    onchange="sectorChange(this)">
+                </select>
+            </div>
+
+        </div>
+
+        <div class="all-cases">
+
+            <div class="tay-bot">
+                <div class="tay-bot-image">
+                    <img src="" alt="microsoft's tay bot">
+                </div>
+                <h5>Microsoft's Tay Bot</h5>
+            </div>
+        </div>
+
+
+
+
+<!-- button for random case -->
+
+    </body>
