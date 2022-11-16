@@ -5,6 +5,15 @@ body {
     margin: 50px 100px 200px 100px;
 }
 
+@keyframes banner {
+
+}
+
+.banner p {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
 h1 {
     font-size: 36px;
     font-weight: 700;
