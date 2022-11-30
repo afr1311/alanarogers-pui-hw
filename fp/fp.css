@@ -5,7 +5,6 @@ body {
     margin: 50px;
 }
 
-
 /* PAGE NAV */
 
 header {
@@ -23,7 +22,6 @@ header h1 {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-
 }
 
 h2 a:hover {
@@ -101,7 +99,6 @@ nav {
     opacity: 0;
 }
 
-
 .fairness p,
 .accountability p,
 .transparency p,
@@ -110,7 +107,6 @@ nav {
     line-height: 22px;
     margin-bottom: 120px;
 }
-
 
 /* FP-CASES PAGE */
 
@@ -237,7 +233,6 @@ a {
     margin: 3px 0;
 }
 
-
 /* FP-DETAIL PAGE */
 
 .individual-case {
@@ -273,7 +268,6 @@ a {
     border-width: 15px;
     margin-bottom: 20px;
 }
-
 
 /* MEDIA QUERIES */
 
@@ -330,7 +324,6 @@ a {
     .individual-case {
         margin-left: 0;
     }
-
 }
 
 @media (max-width: 600px) {
@@ -444,5 +437,4 @@ a {
         font-size: 14px;
         line-height: 20px;
     }
-
 }

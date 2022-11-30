@@ -1,14 +1,13 @@
-// First, we get the query string from the URL. This is the list of parameters
-// that begins with a question mark. (These are known as "search parameters")
+// get the query string from the URL
 const queryString = window.location.search;
 
-// Then, we use the query string to create a URLSearchParams object:
+// use the query string to create a URLSearchParams object
 const params = new URLSearchParams(queryString);
 
-// Finally, we can access the parameter we want using the "get" method:
+// access the parameter
 const caseName = params.get("cases");
 
-// access dictionary rolls --> from rollsData.js
+// access dictionary
 let caseTitle = cases[caseName].title;
 let caseImage = cases[caseName].imageFile;
 let caseYear = cases[caseName].year;
@@ -43,5 +42,3 @@ domainElement.innerHTML = caseDomain;
 // update description in html
 let descriptionElement = document.getElementById('description');
 descriptionElement.innerHTML = caseDescription;
-
-
