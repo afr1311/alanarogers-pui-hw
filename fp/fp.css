@@ -2,29 +2,34 @@ body {
     color: black;
     background-color: #edf2b8;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 50px 100px 200px 100px;
+    margin: 50px;
 }
 
-@keyframes banner {
 
+/* PAGE NAV */
+
+header {
+    width: 100%;
+    background-color:  #edf2b8;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    margin-left: -50px;
+    padding-bottom: 10px;
+    padding-top: 100px;
 }
 
-.banner p {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-
-h1 {
+header h1 {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-    margin: 80px;
+
 }
 
 h2 a:hover {
     background-color: black;
     color: white;
-    padding: 10px 0 10px 0px;
+    padding: 10px 10 10px 10px;
     border-radius: 5px;
 }
 
@@ -32,6 +37,7 @@ h1 a,
 h2 a {
     text-decoration: none;
     color: black;
+    padding: 10px 10px 10px 10px;
 }
 
 h2 {
@@ -40,20 +46,403 @@ h2 {
 }
 
 .content {
+    margin-top: 300px;
     display: flex;
+    flex-wrap: wrap;
 }
 
-#home a {
+#selected a {
     background-color: black;
     color: white;
-    padding: 10px 0 10px 0px;
+    padding: 10px 10px 10px 10px;
     border-radius: 5px;
-}
-
-.what-is-fate {
-    margin-left: 200px;
 }
 
 nav {
     width: 300px;
+    position: fixed;
+    background-color: #edf2b8;
+    z-index: 1;
+}
+
+/* HOME PAGE */
+
+.what-is-fate {
+    margin-left: 320px;
+}
+
+.fairness-images,
+.accountability-images,
+.transparency-images,
+.ethics-images {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.fairness-images img,
+.accountability-images img,
+.transparency-images img,
+.ethics-images img  {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+
+.fairness-images img.fairness2:hover,
+.accountability-images img.accountability2:hover,
+.transparency-images img.transparency2:hover,
+.ethics-images img.ethics2:hover {
+    opacity: 0;
+}
+
+
+.fairness p,
+.accountability p,
+.transparency p,
+.ethics p {
+    max-width: 600px;
+    line-height: 22px;
+    margin-bottom: 120px;
+}
+
+
+/* FP-CASES PAGE */
+
+.cases-menu {
+    display: flex;
+    width: 80%;
+    margin-left: 320px;
+}
+
+.all-cases-button a {
+    color: black;
+    font-weight: 700;
+    padding: 3px;
+    font-style: italic;
+}
+
+.all-cases-button a:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 3px;
+    font-style: normal;
+}
+
+.filters-year,
+.filters-domain,
+.filters-sector {
+    height: 18px;
+    align-items: center;
+    list-style: none;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+.sort-year h3,
+.sort-domain h3,
+.sort-sector h3 {
+    font-size: 16px;
+}
+
+.sort-domain h3,
+.sort-sector h3 {
+    margin-top: 35px;
+}
+
+.filters-domain {
+    width: 300px;
+}
+
+.filters-year .selected,
+.filters-domain .selected,
+.filters-sector .selected,
+.all-cases-button .selected {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    font-style: normal;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+li a {
+    color: black;
+    margin-right: 10px;
+    padding:3px;
+    font-style: italic;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 3px;
+    font-style: normal;
+}
+
+.cases-grid {
+    display: flex;
+    margin-left: 300px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.cases {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.desc-year,
+.desc-sector,
+.desc-domain {
+    font-size: 12px;
+    margin: 3px 0;
+}
+
+
+/* FP-DETAIL PAGE */
+
+.individual-case {
+    display: flex;
+    margin-left: 320px;
+    flex-direction: column;
+}
+
+.case-info p {
+    font-size: 16px;
+}
+
+#heading {
+    font-size: 24px;
+}
+
+#year,
+#sector,
+#domain {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#description {
+    line-height: 24px;
+}
+
+#image {
+    width: 300px;
+    border-style: solid;
+    border-width: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1700px) {
+    
+    .cases-menu {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1300px) {
+    
+    .all-cases-button {
+        width: 115px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        top: 0;
+        margin-top: 100px;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    nav h2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .content {
+        justify-content: center;
+    }
+
+    .what-is-fate {
+        margin: 0;
+    }
+
+    .cases-menu {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .cases-grid {
+        margin-left: 0;
+        margin-top: 150px;
+        justify-content: center;
+    }
+
+    .individual-case {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cases-menu {
+        flex-direction: column;
+    }
+
+    .sort-domain,
+    .sort-sector,
+    .sort-year {
+        margin-bottom: 60px;
+    }
+
+    .cases-grid {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    body {
+        margin: 30px;
+        font-size: 14px;
+    }
+
+    header {
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+
+    h1 {
+        margin: 20px;
+        margin-right: -40px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .fairness-images,
+    .accountability-images,
+    .transparency-images,
+    .ethics-images {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .fairness-images img,
+    .accountability-images img,
+    .transparency-images img,
+    .ethics-images img  {
+        width: 200px;
+    }
+
+    .fairness p,
+    .accountability p,
+    .transparency p,
+    .ethics p {
+        margin-bottom: 60px;
+    }
+
+    .cases-menu {
+        flex-direction: column;
+    }
+
+    .sort-domain,
+    .sort-sector,
+    .sort-year {
+        margin-bottom: 80px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    .cases-grid {
+        margin-top: 0;
+    }
+
+    #heading {
+        font-size: 18px;
+    }
+
+    #image {
+        width: 200px;
+        border-width: 10px;
+    }
+
+    #sector,
+    #year,
+    #domain {
+        font-size: 16px;
+    }
+
+    #description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
 }

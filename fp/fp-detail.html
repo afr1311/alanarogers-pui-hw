@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../fp/fp.css">
-        <title>FATE</title>
+        <title id="title">FATE</title>
+        <script src="fp-cases.js" defer></script>
+        <script src="fp-details.js" defer></script>
     </head>
 
     <body>
@@ -15,15 +17,36 @@
         </header>
 
         
-        <nav>
-            <h2>
-                <a href="fp-home.html">What is FATE?</a>
-            </h2>
-            
-            <h2>
-                <a href="fp-cases.html">Cases of algorithmic bias</a>
-            </h2>
-        </nav>
+        <div class="content">
 
+            <nav>
+                <h2>
+                    <a href="fp-home.html">What is FATE?</a>
+                </h2>
+                
+                <h2 id="selected">
+                    <a href="fp-cases.html">Cases of algorithmic bias</a>
+                </h2>
+            </nav>
+
+            <div class="individual-case">
+
+                <h2 id="heading">Amazon AI Recruiting Tool</h2>
+    
+                <img id="image" src="../fp/assets/200x200/amazon.jpg">
+                
+                <div class="case-info">
+    
+                    <p id="year">2014</p>
+                    <p id="sector">Sector: Private Sector</p>
+                    <p id="domain">Domain: Hiring + Recruiting Services</p>
+                    <p id="description">Description</p>
+    
+                </div>
+    
+
+            </div>
+
+        </div>
     </body>
 </html>
