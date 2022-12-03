@@ -30,15 +30,15 @@ imageElement.src = '../fp/assets/200x200/' + caseImage;
 
 // update year in html
 let yearElement = document.getElementById('year');
-yearElement.innerHTML = caseYear;
+yearElement.innerHTML = "Year: " + caseYear;
 
 // update sector in html
 let sectorElement = document.getElementById('sector');
-sectorElement.innerHTML = caseSector;
+sectorElement.innerHTML = "Sector: " + caseSector;
 
 // update domain in html
 let domainElement = document.getElementById('domain');
-domainElement.innerHTML = caseDomain;
+domainElement.innerHTML = "Domain: " + caseDomain;
 
 // update description in html
 let descriptionElement = document.getElementById('description');
