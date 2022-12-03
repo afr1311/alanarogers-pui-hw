@@ -7,6 +7,7 @@ const params = new URLSearchParams(queryString);
 // access the parameter
 const caseName = params.get("cases");
 
+console.log(cases[caseName])
 // access dictionary
 let caseTitle = cases[caseName].title;
 let caseImage = cases[caseName].imageFile;
