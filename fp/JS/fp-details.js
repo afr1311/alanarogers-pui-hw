@@ -26,7 +26,7 @@ headerElement.innerHTML = caseTitle;
 
 // update image in html
 let imageElement = document.getElementById('image');
-imageElement.src = '../fp/assets/200x200/' + caseImage;
+imageElement.src = '../assets/200x200/' + caseImage;
 
 // update year in html
 let yearElement = document.getElementById('year');
