@@ -2,6 +2,7 @@ const cases = {
     "Tay-Bot": {
         "title": "Microsoft Tay Bot",
         "imageFile": "tay-bot.jpeg",
+        "alt": "artistically pixelated side angle portrait of woman with brown hair",
         "year": "2016",
         "sector": "Private",
         "domain": "Social Media / Chatbot",
@@ -11,6 +12,7 @@ const cases = {
     "Twitter": {
         "title": "Twitter's Image Cropping Algorithm",
         "imageFile": "twitter.jpg",
+        "alt": "portrait of Mitch McConnell, Twitter's bird logo and portrait of Barack Obama",
         "year": "2018",
         "sector": "Private",
         "domain": "Image / Video",
@@ -20,6 +22,7 @@ const cases = {
     "Zoom": {
         "title": "Zoom Virtual Background",
         "imageFile": "zoom.jpg",
+        "alt": "virtual zoom background of sunset appears for white male zoom user but doesn't appear for black male zoom user",
         "year": "2020",
         "sector": "Private",
         "domain": "Image / Video",
@@ -29,6 +32,7 @@ const cases = {
     "Amazon": {
         "title": "Amazon's AI Recruiting Tool",
         "imageFile": "amazon.jpg",
+        "alt": "professional man with purple color filter and checkmark and professional woman with blue color filter and x-mark with the words 'hiring complete' in between them",
         "year": "2014",
         "sector": "Private",
         "domain": "Hiring + Recruiting Services",
@@ -38,6 +42,7 @@ const cases = {
     "Microsoft-Zo": {
         "title": "Microsoft Zo",
         "imageFile": "zo.jpg",
+        "alt": "artistically pixelated side angle portrait of woman with brown hair and blue eyes",
         "year": "2016",
         "sector": "Private",
         "domain": "Social Media / Chatbot",
@@ -47,6 +52,7 @@ const cases = {
     "San-Diego-Police": {
         "title": "San Diego County Facial Recognition Tools (TACIDS)",
         "imageFile": "sandiego.jpg",
+        "alt": "San Diego police badge on the shoulder of a police in uniform",
         "year": "2012",
         "sector": "Public",
         "domain": "Facial Recognition + Surveillance",
@@ -56,6 +62,7 @@ const cases = {
     "San-Francisco-Police": {
         "title": "San Francisco Facial Recognition",
         "imageFile": "sanfrancisco.jpg",
+        "alt": "male faces identified by facial recognition software with dates and times",
         "year": "2019",
         "sector": "Public",
         "domain": "Facial Recognition + Surveillance",
@@ -65,6 +72,7 @@ const cases = {
     "Project-Greenlight": {
         "title": "Project Greenlight Detroit",
         "imageFile": "projectgreenlight.jpg",
+        "alt": "city of Detroit's Project Green Light logo with a green squatting man",
         "year": "2016",
         "sector": "Public",
         "domain": "Facial Recognition + Surveillance",
@@ -74,6 +82,7 @@ const cases = {
     "Pittsburgh-Predictive-Policing": {
         "title": "Pittsburgh Predictive Policing",
         "imageFile": "pghpolice.jpg",
+        "alt": "Pittsburgh police car parked in front of retail stores",
         "year": "2019",
         "sector": "Public",
         "domain": "Predictive Policing",
@@ -83,6 +92,7 @@ const cases = {
     "Chicago-Police": {
         "title": "Chicago Predictive Policing",
         "imageFile": "chicagopolice.jpg",
+        "alt": "male and female Chicago police in uniform and sitting down",
         "year": "2012",
         "sector": "Public",
         "domain": "Predictive Policing",
@@ -92,6 +102,7 @@ const cases = {
     "Pittsburgh-Screening-Tool": {
         "title": "Pittsburgh Alleghenu County Family Screening Tool (AFST)",
         "imageFile": "pghafst.jpg",
+        "alt": "photograph portrait of young girl with blue graphics overlay",
         "year": "2016",
         "sector": "Public",
         "domain": "Child / Family Welfare",

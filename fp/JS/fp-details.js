@@ -7,10 +7,10 @@ const params = new URLSearchParams(queryString);
 // access the parameter
 const caseName = params.get("cases");
 
-console.log(cases[caseName])
 // access dictionary
 let caseTitle = cases[caseName].title;
 let caseImage = cases[caseName].imageFile;
+let caseAlt = cases[caseName].alt;
 let caseYear = cases[caseName].year;
 let caseSector = cases[caseName].sector;
 let caseDomain = cases[caseName].domain;
@@ -27,6 +27,7 @@ headerElement.innerHTML = caseTitle;
 // update image in html
 let imageElement = document.getElementById('image');
 imageElement.src = '../assets/200x200/' + caseImage;
+imageElement.alt = caseAlt;
 
 // update year in html
 let yearElement = document.getElementById('year');
